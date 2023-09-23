@@ -1,0 +1,46 @@
+#about, #about-gallery {
+  margin-top: 20px;
+
+  .main-pfp {
+    margin-top: 20px;
+  }
+
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-right: calc(var(--bs-gutter-x) * 3.5);
+    padding-left: calc(var(--bs-gutter-x) * 3.5);
+  }
+}
+
+#about-gallery {
+  padding-bottom: 25px;
+
+  .popup-gallery a {
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    border: 1px solid #777;
+  }
+
+  .popup-gallery a img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .popup-gallery a video {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .row > * {
+    padding-right: calc(var(--bs-gutter-x) * .1);
+    padding-left: calc(var(--bs-gutter-x) * .1);
+  }
+}

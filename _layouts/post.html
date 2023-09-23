@@ -1,0 +1,22 @@
+---
+layout: blog
+---
+
+<div class="container">
+    <a class="header-at-article" href="{{ site.baseurl }}/blog">BGM's Museum</a>
+    <hr/>
+</div>
+
+<article class="container">
+    <br/>
+    <div class="card">
+        <small class="card-header">Published on {{ page.date | date: '%B %e, %Y' }}</small>
+        <div class="card-body">
+            <h5><b>{{ page.title }}</b></h5>
+            <p class="card-text">{{ content }}</p>
+            <div class="arrow-back">
+                <a href="{{ site.baseurl }}/blog" class="go-back">&laquo; Back</a>
+            </div>
+        </div>
+    </div>
+</article>

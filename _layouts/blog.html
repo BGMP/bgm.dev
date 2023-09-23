@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+{% include nav.html %}
+
+<section id="blog" class="container">
+    <div class="row py-3">
+
+        {% include side-nav.html %}
+
+        <div class="col" id="main">
+
+            {{ content }}
+
+        </div>
+    </div>
+</section>
+
+</body>
+
+{% include footer.html %}
+
+</html>

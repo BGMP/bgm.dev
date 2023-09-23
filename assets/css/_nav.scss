@@ -1,0 +1,77 @@
+#nav {
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+
+  .navbar-top {
+    margin-left: 1rem;
+  }
+
+  .navbar-brand {
+    margin-bottom: -35px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+
+    small {
+      font-size: 18px;
+    }
+  }
+
+  .navbar-spacer {
+    hr {
+      margin-bottom: 0;
+      padding: 0 0;
+    }
+  }
+
+  .navbar-main {
+    margin-top: -10px;
+    font-size: 16px;
+  }
+
+  .navbar-toggler {
+    padding: var(--bs-border-width);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: transparent;
+    background-color: transparent;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: 0;
+    transition: var(--bs-navbar-toggler-transition);
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin-top: 2px;
+
+    .active {
+      font-weight: bold;
+    }
+  }
+
+  .nav-item:hover {
+    outline: 1px solid rgb(73, 73, 73);
+  }
+
+  .navbar-nav > li > .dropdown-menu a:hover {
+    color: black;
+  }
+
+  .navbar-nav > li > .dropdown-menu a:focus {
+    color: black;
+  }
+
+  .nav-link:focus, .nav-link:hover {
+    color: black;
+  }
+
+  .nav-link {
+    transition: color 0s ease-in-out,background-color 0s ease-in-out,border-color 0s ease-in-out;
+  }
+
+  .collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+  }
+}

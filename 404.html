@@ -1,0 +1,37 @@
+---
+layout: none
+title: Not Found
+---
+
+<style>
+    .jumbotron {
+        background: url("{{ site.url }}/assets/img/404.jpg") no-repeat;
+        border-radius: 0;
+    }
+
+    .text-error {
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 0 8px #000;
+    }
+</style>
+
+
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+{% include nav.html %}
+
+<div class="container" style="background-size: 100%">
+    <div class="jumbotron p-3 p-md-6 text-error bg-dark" style="background-size: 100% 263px;">
+        <h1 style="margin-left: 20px; font-size: 80px;" class="display-4"><b>Error 404</b></h1>
+    </div>
+</div>
+
+</body>
+
+{% include footer.html %}

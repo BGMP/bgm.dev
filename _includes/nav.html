@@ -1,0 +1,51 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<div id="nav">
+    <div class="d-md-none">
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    BGM
+                </a>
+            </div>
+        </nav>
+        <div class="container navbar-spacer">
+            <hr/>
+        </div>
+    </div>
+    <div class="d-none d-md-block navbar-top">
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    BGM <small>SOFTWARE DEVELOPER</small>
+                </a>
+            </div>
+        </nav>
+        <div class="container navbar-spacer">
+            <hr/>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-main">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link {% if current[1] == null %} active {% endif %}" aria-current="page" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if current[1] == 'portfolio' %} active {% endif %}>" aria-current="page" href="{{ site.baseurl }}/portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if current[1] == 'blog' %} active {% endif %}>" aria-current="page" href="{{ site.baseurl }}/blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if current[1] == 'about' %} active {% endif %}>" aria-current="page" href="{{ site.baseurl }}/about">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

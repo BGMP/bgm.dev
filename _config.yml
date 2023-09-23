@@ -1,0 +1,51 @@
+title: BGM — Software Developer
+description: The personal website of José Benavente, also known as BGM. Check out my projects, my blog, and much more!
+url: "https://bgm.dev"
+encoding: UTF-8
+
+github: BGMP
+email: jose@bgm.cl
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /blog/:year/:month/:day/:title/
+      image: https://example.com/img
+      layout: post
+      is_post: true
+
+include:
+  - _pages
+
+exclude:
+  - Capfile
+  - LICENCE.md
+  - README.md
+  - config/
+  - log/
+  - docs/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# paginate
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/blog/:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
