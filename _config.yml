@@ -6,6 +6,8 @@ encoding: UTF-8
 github: BGMP
 email: jose@bgm.cl
 
+google_analytics: G-MMLDJGW91Y
+
 sass:
   sass_dir: assets/css
   style: compressed
