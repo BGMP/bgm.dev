@@ -1,2 +1,6 @@
 *.html linguist-language=Ruby
 *.md linguist-language=Ruby
+
+assets/js/magnific-popup/* linguist-vendored
+assets/css/font-awesome/* linguist-vendored
+assets/css/magnific-popup/* linguist-vendored
