@@ -38,6 +38,14 @@
     margin-left: auto;
   }
 
+  @media (max-width: 576px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      padding-right: calc(var(--bs-gutter-x) * 0);
+      padding-left: calc(var(--bs-gutter-x) * 0);
+      max-width: 100% !important;
+    }
+  }
+
   .card {
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;

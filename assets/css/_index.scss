@@ -13,6 +13,14 @@
     padding-right: calc(var(--bs-gutter-x) * 3.5);
     padding-left: calc(var(--bs-gutter-x) * 3.5);
   }
+
+  @media (max-width: 576px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      padding-right: calc(var(--bs-gutter-x) * 1);
+      padding-left: calc(var(--bs-gutter-x) * 1);
+      max-width: 100% !important;
+    }
+  }
 }
 
 #gallery {
