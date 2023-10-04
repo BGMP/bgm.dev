@@ -22,40 +22,40 @@
     }
   }
 
+  .btn-primary, .btn-outline-primary {
+    --bs-btn-color: var(--color-text);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--color-text);
+    --bs-btn-hover-color: var(--color-text);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: var(--color-text);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: var(--color-text);
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: var(--color-text);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--color-text);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: black;
+  }
+
+  .btn-group-sm > .btn, .btn-sm {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: 0;
+    margin-bottom: 1px;
+  }
+
+  .btn-outline-primary {
+    --bs-btn-hover-color: var(--color-background);
+    --bs-btn-hover-bg: var(--color-text);
+    --bs-btn-hover-border-color: var(--color-text);
+    margin-bottom: 10px;
+  }
+
   #portfolio-gallery {
     margin-top: 40px;
-
-    .btn-primary, .btn-outline-primary {
-      --bs-btn-color: var(--color-text);
-      --bs-btn-bg: transparent;
-      --bs-btn-border-color: var(--color-text);
-      --bs-btn-hover-color: var(--color-text);
-      --bs-btn-hover-bg: transparent;
-      --bs-btn-hover-border-color: var(--color-text);
-      --bs-btn-focus-shadow-rgb: 49,132,253;
-      --bs-btn-active-color: var(--color-text);
-      --bs-btn-active-bg: transparent;
-      --bs-btn-active-border-color: var(--color-text);
-      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-      --bs-btn-disabled-color: var(--color-text);
-      --bs-btn-disabled-bg: transparent;
-      --bs-btn-disabled-border-color: black;
-    }
-
-    .btn-group-sm > .btn, .btn-sm {
-      --bs-btn-padding-y: 0.25rem;
-      --bs-btn-padding-x: 0.5rem;
-      --bs-btn-font-size: 0.875rem;
-      --bs-btn-border-radius: 0;
-      margin-bottom: 1px;
-    }
-
-    .btn-outline-primary {
-      --bs-btn-hover-color: var(--color-background);
-      --bs-btn-hover-bg: var(--color-text);
-      --bs-btn-hover-border-color: var(--color-text);
-      margin-bottom: 10px;
-    }
 
     .btn-outline-primary:hover {
       color: var(--color-text);
