@@ -4,6 +4,9 @@
 {% include head.html %}
 
 <body>
+    <script>
+        document.body.classList.toggle('dark-theme', localStorage.getItem('dark-theme') === 'true');
+    </script>
 
 {% include nav.html %}
 

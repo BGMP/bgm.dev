@@ -27,9 +27,42 @@
   src: url("./fonts/LibreBaskerville-Italic.ttf");
 }
 
+:root {
+  --color-text: #292D31;
+  --color-background: #f7f8fa;
+}
+
+.dark-theme {
+  --color-text: #ADBAC7;
+  --color-background: #0F111A;
+
+  a {
+    color: #809fff;
+  }
+
+  #nav .navbar-toggler-icon {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  footer {
+    img {
+      -webkit-filter: invert(1);
+      filter: invert(1);
+    }
+  }
+}
+
 body {
   font-family: Baskerville, serif;
   font-size: 14px;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+hr {
+  border-top: 1px solid var(--color-text);
+  opacity: 0.5;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {

@@ -2,7 +2,7 @@
   .header-at-article {
     font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: var(--color-text);
   }
 
   .card-title {
@@ -31,7 +31,7 @@
     --bs-card-spacer-x: 1rem;
     --bs-card-title-spacer-y: 0.5rem;
     --bs-card-border-width: var(--bs-border-width);
-    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-color: var(--color-text);
     --bs-card-border-radius: var(--bs-border-radius);
     --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
     --bs-card-cap-padding-y: 0.5rem;
@@ -45,20 +45,20 @@
     flex-direction: column;
     min-width: 0;
     height: var(--bs-card-height);
-    color: var(--bs-body-color);
+    color: var(--color-text);
     word-wrap: break-word;
-    background-color: var(--bs-card-bg);
+    background-color: var(--color-background);
     background-clip: border-box;
-    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border: var(--bs-card-border-width) solid var(--color-text);
     border-radius: 0;
   }
 
   .card-header {
     padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
     margin-bottom: 0;
-    color: var(--bs-card-cap-color);
-    background-color: var(--bs-card-cap-bg);
-    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    color: var(--color-text);
+    background-color: var(--color-text);
+    border-bottom: var(--bs-card-border-width) solid var(--color-text);
   }
 
   .card-header:first-child {

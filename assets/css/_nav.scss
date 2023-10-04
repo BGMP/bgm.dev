@@ -9,7 +9,7 @@
     font-weight: bold;
     margin-bottom: -35px;
     font-size: 25px;
-    color: black;
+    color: var(--color-text);
     text-decoration: none;
 
     small {
@@ -35,7 +35,7 @@
     line-height: 1;
     color: transparent;
     background-color: transparent;
-    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border: var(--bs-border-width) solid var(--color-text);
     border-radius: 0;
     transition: var(--bs-navbar-toggler-transition);
     margin-top: 10px;
@@ -51,22 +51,53 @@
   }
 
   .nav-item:hover {
-    outline: 1px solid rgb(73, 73, 73);
+    outline: 1px solid var(--color-text);
   }
 
   .navbar-nav > li > .dropdown-menu a:hover {
-    color: black;
+    color: var(--color-text);
   }
 
   .navbar-nav > li > .dropdown-menu a:focus {
-    color: black;
+    color: var(--color-text);
   }
 
   .nav-link:focus, .nav-link:hover {
-    color: black;
+    color: var(--color-text);
   }
 
   .nav-link {
+    color: var(--color-text);
+    transition: color 0s ease-in-out,background-color 0s ease-in-out,border-color 0s ease-in-out;
+  }
+
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .btn-success {
+    --bs-btn-color: var(--color-text);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: var(--color-text);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: var(--color-text);
+    --bs-btn-focus-shadow-rgb: var(--color-text);
+    --bs-btn-active-color: var(--color-text);
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: var(--color-text);
+    --bs-btn-active-shadow: inset 0 3px 5px var(--color-text);
+    --bs-btn-disabled-color: var(--color-text);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--color-text);
+    border-radius: 0;
     transition: color 0s ease-in-out,background-color 0s ease-in-out,border-color 0s ease-in-out;
   }
 
