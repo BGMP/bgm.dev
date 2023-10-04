@@ -51,12 +51,12 @@
     --bs-card-spacer-x: 1rem;
     --bs-card-title-spacer-y: 0.5rem;
     --bs-card-border-width: var(--bs-border-width);
-    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-color: var(--color-border);
     --bs-card-border-radius: var(--bs-border-radius);
     --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
     --bs-card-cap-padding-y: 0.5rem;
     --bs-card-cap-padding-x: 1rem;
-    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-bg: var(--color-background-dim);
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
 
@@ -76,8 +76,8 @@
   .card-header {
     padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
     margin-bottom: 0;
-    color: var(--bs-card-cap-color);
-    background-color: var(--bs-card-cap-bg);
+    color: var(--color-text);
+    background-color: var(--color-background-dim);
     border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
   }
 

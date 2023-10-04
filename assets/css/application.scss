@@ -28,13 +28,17 @@
 }
 
 :root {
-  --color-text: #292D31;
+  --color-text: #3b3f48;
   --color-background: #f7f8fa;
+  --color-background-dim: #F7F8FA;
+  --color-border: #c6c7c8;
 }
 
 .dark-theme {
   --color-text: #ADBAC7;
-  --color-background: #0F111A;
+  --color-background: #0f111a;
+  --color-background-dim: #1a1b2f;
+  --color-border: #929292;
 
   a {
     color: #809fff;
