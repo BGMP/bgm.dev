@@ -24,6 +24,10 @@ title: Not Found
 
 <body>
 
+<script>
+    document.body.classList.toggle('dark-theme', localStorage.getItem('dark-theme') === 'true');
+</script>
+
 {% include nav.html %}
 
 <div class="container" style="background-size: 100%">
