@@ -44,6 +44,21 @@
                     <li class="nav-item">
                         <a class="nav-link {% if current[1] == 'about' %} active {% endif %}>" aria-current="page" href="{{ site.baseurl }}/about">ABOUT</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            LANGUAGE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://bgm.dev">
+                                <img class="locale-flag" src="{{ site.url }}/assets/img/en_gb.png" alt="">
+                                ENGLISH
+                            </a>
+                            <a class="dropdown-item" href="https://bgm.cl">
+                                <img class="locale-flag" src="{{ site.url }}/assets/img/es_cl.png" alt="">
+                                ESPAÑOL
+                            </a>
+                        </ul>
+                    </li>
                 </ul>
                 <button onClick="toggleTheme()" class="btn btn-success" type="submit"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
             </div>

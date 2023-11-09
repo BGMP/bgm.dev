@@ -106,4 +106,27 @@
     transition: none;
     display: none;
   }
+
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    margin-top: var(--bs-dropdown-spacer);
+    background-color: transparent;
+    border-color: var(--color-text);
+    border-radius: 0;
+
+    a {
+      color: var(--color-text);
+    }
+  }
+
+  .locale-flag {
+    height: 29px;
+    width: 29px;
+  }
+
+  .dropdown-item:hover {
+    color: var(--color-background) !important;
+    background-color: var(--color-text);
+  }
 }
