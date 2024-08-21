@@ -12,12 +12,16 @@ layout: blog
     <div class="card">
         <small class="card-header">Published on {{ page.date | date: '%B %e, %Y' }}</small>
         <div class="card-body">
+            <nav>
+                <a href="{{ site.baseurl }}/blog" class="go-back">&laquo; Back</a>
+            </nav>
+            <br/>
             <h5><b>{{ page.title }}</b></h5>
             <p class="card-text">{{ content }}</p>
-            <div class="arrow-back">
+            <nav>
                 <a href="{{ site.baseurl }}/blog" class="go-back">&laquo; Back</a>
                 <a href="{{ page.discussion }}" target="_blank" class="comment">Comment</a>
-            </div>
+            </nav>
         </div>
     </div>
 </article>
