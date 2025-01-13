@@ -10,7 +10,7 @@ gem 'jekyll-paginate', '~> 1.1'                                   # Jekyll pagin
 gem 'jekyll-sitemap', '~> 1.4'                                    # Jekyll site map plugin
 gem 'kramdown-parser-gfm', '~> 1.1'                               # Parser for the GFM dialect of Markdown
 
-gem 'webrick', '~> 1.8', '>= 1.8.1'                               # HTTP server toolkit
+gem 'webrick', '~> 1.8'                                         # HTTP server toolkit
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem 'tzinfo', '~> 2.0', '>= 2.0.6'
