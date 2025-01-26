@@ -37,7 +37,13 @@ Get Microsoft Macro Assembler, link in the references! Then, extract the disks' 
 
 From DOS' command line, run the `SETUP.EXE` file that comes with MASM611. The installer will then prompt you with an installation screen. Follow the instructions and select all the defaults you see fit.
 
-<img src="https://github.com/myfoundation/Game-Programming-Gurus-Reloaded/assets/26081543/fe0dd6ee-ba8a-4e2c-8d4e-40b5fee2537e">
+
+<div class="popup-post" align="center">
+    <a href="{{ site.url }}/assets/img/posts/tricks-of-the-game-programming-gurus-chapter-2/masm.png">
+        <img src="{{ site.url }}/assets/img/posts/tricks-of-the-game-programming-gurus-chapter-2/masm.png" alt="" width="80%">
+    </a>
+</div>
+<br/>
 
 #### C
 ---
@@ -45,7 +51,12 @@ Get Borland Turbo C++, link in the references! Much like you did with MASM, extr
 
 From DOS' command line, run the `INSTALL.EXE` file that comes with TCC. The installer will then prompt you with an installation screen. Follow the instructions and it will install accordingly. Also, at one point in the installation process, TCC will ask you what folder it should install itself to. In my case, I selected `C:\TC\`.
 
-<img src="https://github.com/myfoundation/Game-Programming-Gurus-Reloaded/assets/26081543/377a72e8-0e59-45ea-a7fe-943053eb5396">
+<div class="popup-post" align="center">
+    <a href="{{ site.url }}/assets/img/posts/tricks-of-the-game-programming-gurus-chapter-2/turbocpp.png">
+        <img src="{{ site.url }}/assets/img/posts/tricks-of-the-game-programming-gurus-chapter-2/turbocpp.png" alt="" width="80%">
+    </a>
+</div>
+<br/>
 
 #### Assembling, Compiling, Linking and Running
 ---
