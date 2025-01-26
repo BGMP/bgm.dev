@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tricks of The Game Programming Gurus - Chapter 2"
-description: "A walkthrough of the practical examples presented in chapter 2 of the book 'Tricks of the Game Programming Gurus'."
+description: "A walkthrough of the practical examples presented in chapter 2 of the book Tricks of the Game Programming Gurus."
 image: "https://bgm.dev/assets/img/posts/tricks-of-the-game-programming-gurus-chapter-2/cover.png"
 discussion: "https://github.com/BGMP/bgm.dev/discussions/11"
 ---
