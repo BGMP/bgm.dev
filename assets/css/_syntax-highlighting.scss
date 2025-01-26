@@ -1,0 +1,126 @@
+pre code {
+  display: block;
+  padding: 1rem;
+  background: var(--color-background-dim);
+  border: 1px solid var(--color-border);
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+}
+
+.highlight {
+  background: var(--color-background-dim);
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid var(--color-border);
+
+  pre {
+    margin: 0;
+    line-height: 1.5;
+    background: none;
+    border: none;
+    padding: 0;
+
+    .highlight {
+      background: none;
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+  }
+
+  // Light theme colors
+  .c, .c1, .cm { color: #998; font-style: italic; } // Comments
+  .k, .kd, .kn { color: #000080; font-weight: bold; } // Keywords
+  .o { color: #666; } // Operators
+  .s, .s1, .s2 { color: #d14; } // Strings
+  .na { color: #008080; } // Names
+  .nb { color: #0086B3; } // Built-ins
+  .nc { color: #458; font-weight: bold; } // Classes
+  .nf { color: #900; font-weight: bold; } // Functions
+  .nn { color: #555; } // Namespace
+  .nt { color: #000080; } // Tags
+  .nv { color: #008080; } // Variables
+  .m, .mi, .mf { color: #099; } // Numbers
+}
+
+.dark-theme {
+  .highlight {
+    // Dark theme colors
+    .c, .c1, .cm { color: #6a737d; }
+    .k, .kd, .kn { color: #ff7b72; }
+    .o { color: #79c0ff; }
+    .s, .s1, .s2 { color: #a5d6ff; }
+    .na { color: #ffa657; }
+    .nb { color: #79c0ff; }
+    .nc { color: #ffa657; }
+    .nf { color: #d2a8ff; }
+    .nn { color: #ff7b72; }
+    .nt { color: #7ee787; }
+    .nv { color: #79c0ff; }
+    .m, .mi, .mf { color: #a5d6ff; }
+  }
+}
+
+code.language-asm {
+  // Directives (.MODEL, .CODE, etc)
+  .model, .code, .end, .data, .stack {
+    color: #0086b3;
+    font-weight: bold;
+  }
+
+  // Procedures and declarations
+  .proc, .endp, .public, .private, .extern, .uses {
+    color: #795da3;
+    font-weight: bold;
+  }
+
+  // Types
+  .word, .byte, .dword, .qword, .medium, .small, .large,
+  .compact, .tiny, .flat, .near, .far {
+    color: #445588;
+  }
+
+  // Instructions
+  [class^="mov"], [class^="add"], [class^="sub"], [class^="mul"],
+  [class^="div"], [class^="inc"], [class^="dec"], [class^="and"],
+  [class^="or"], [class^="xor"], [class^="not"], [class^="neg"],
+  [class^="push"], [class^="pop"], [class^="call"], [class^="ret"],
+  [class^="jmp"], [class^="je"], [class^="jne"], [class^="jg"],
+  [class^="jl"], [class^="jge"], [class^="jle"], [class^="cmp"],
+  [class^="test"] {
+    color: #a71d5d;
+  }
+
+  // Registers
+  [class^="ax"], [class^="bx"], [class^="cx"], [class^="dx"],
+  [class^="si"], [class^="di"], [class^="sp"], [class^="bp"],
+  [class^="cs"], [class^="ds"], [class^="es"], [class^="ss"] {
+    color: #0086b3;
+  }
+}
+
+.dark-theme code.language-asm {
+  .model, .code, .end, .data, .stack { color: #79c0ff; }
+  .proc, .endp, .public, .private, .extern, .uses { color: #d2a8ff; }
+  .word, .byte, .dword, .qword, .medium, .small, .large,
+  .compact, .tiny, .flat, .near, .far { color: #a5d6ff; }
+
+  [class^="mov"], [class^="add"], [class^="sub"], [class^="mul"],
+  [class^="div"], [class^="inc"], [class^="dec"], [class^="and"],
+  [class^="or"], [class^="xor"], [class^="not"], [class^="neg"],
+  [class^="push"], [class^="pop"], [class^="call"], [class^="ret"],
+  [class^="jmp"], [class^="je"], [class^="jne"], [class^="jg"],
+  [class^="jl"], [class^="jge"], [class^="jle"], [class^="cmp"],
+  [class^="test"] { color: #ff7b72; }
+
+  [class^="ax"], [class^="bx"], [class^="cx"], [class^="dx"],
+  [class^="si"], [class^="di"], [class^="sp"], [class^="bp"],
+  [class^="cs"], [class^="ds"], [class^="es"], [class^="ss"] { color: #79c0ff; }
+}
