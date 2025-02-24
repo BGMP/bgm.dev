@@ -10,7 +10,14 @@ so far!
 
 This week I picked up on reading a book I started reading last summer, but haven't had the time to continue at until now.
 This book's title is Tricks of The Game Programming Gurus, by André LaMothe, one of my favourites. It's about
-video game design and development from the DOOM and Wolfenstein era.
+video game design and development from the DOOM and Wolfenstein era. Here's a picture of the book's cover:
+
+<div class="popup-post" align="center">
+    <a href="{{ site.url }}/assets/img/posts/tricks-of-the-game-programming-gurus-chapter-2/cover.png">
+        <img src="{{ site.url }}/assets/img/posts/tricks-of-the-game-programming-gurus-chapter-2/cover.png" alt="" width="40%">
+    </a>
+</div>
+<br/>
 
 When I last got into reading this book, I was able to get some of the examples of Chapter 2 working in a modern
 environment, and now that I'm picking it up again I realise that I never shared my progress in my very blog!. Here is 
